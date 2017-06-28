@@ -3,7 +3,7 @@ package com.simpletask.implementations.algorithms;
 import java.util.Arrays;
 
 // find sum of all members of array
-public class RecursionAlgorithm {
+public class RecursionAlgorithms {
 
     /**
      * Much expensive that simple "for" loop. Besides that, it throw SO Exception, when array length is bigger than 17000
@@ -26,6 +26,14 @@ public class RecursionAlgorithm {
         }
         return res;
     }
+    /**
+     * This method allows you to find length for given arrays
+     */
+    public static int count(int[] array) {
+        if (array.length == 1) {
+            return 1;
+        } else return 1 + count(Arrays.copyOfRange(array, 1, array.length));
+    }
 
     public static void main(String[] args) {
         int[] array = new int[17500];
@@ -38,6 +46,10 @@ public class RecursionAlgorithm {
         timer = System.currentTimeMillis();
         System.out.println(findSumFor(array));
         System.out.println("performance with for is " + (System.currentTimeMillis() - timer) + "ms");
+
+        timer = System.currentTimeMillis();
+        System.out.println(count(array));
+        System.out.println("performance count is " + (System.currentTimeMillis() - timer) + "ms");
     }
 
 }
