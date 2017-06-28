@@ -59,22 +59,4 @@ public class SelectSort {
     public static int[] sort(int[] source) {
         return sortAsc(source);
     }
-
-
-    public static int[] getArray() {
-        int size = (int) (Math.random() * (30 - 1)) + 1;
-        int[] array = new int[size];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * size);
-        }
-        return array;
-    }
-
-
-    public static void main(String[] args) {
-        int[] array = getArray();
-        System.out.println(Arrays.toString(array));
-        System.out.println(Arrays.toString(SelectSort.sort(array)));
-        System.out.println(Arrays.toString(SelectSort.sort(array, DESC)));
-    }
 }
