@@ -17,7 +17,7 @@ public class RecursionAlgorithm {
     }
 
     /**
-     * Cost of this approach is cheaper than recursion, and it can work with bigger arrays
+     * The cost of this approach is cheaper than recursion, and it can work with large arrays
      */
     public static int findSumFor(int[] array) {
         int res = 0;
