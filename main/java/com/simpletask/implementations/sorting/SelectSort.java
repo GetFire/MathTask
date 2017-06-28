@@ -1,7 +1,5 @@
 package com.simpletask.implementations.sorting;
 
-import java.util.Arrays;
-
 public class SelectSort {
 
     public static final int DESC = 0;

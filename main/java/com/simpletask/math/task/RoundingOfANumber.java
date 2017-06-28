@@ -1,6 +1,6 @@
 package com.simpletask.math.task;
 
-public class RounfingOfANumber {
+public class RoundingOfANumber {
     public static void main(String[] args) {
         double a;
         a = 4.5; // тут вводим любое вещественное число
